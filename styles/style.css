@@ -8,6 +8,7 @@
       "Courier New", monospace;
     --color-red-100: oklch(0.936 0.032 17.717);
     --color-green-200: oklch(0.925 0.084 155.995);
+    --color-green-300: oklch(0.871 0.15 154.449);
     --color-teal-200: oklch(0.91 0.096 180.426);
     --color-teal-500: oklch(0.704 0.14 182.503);
     --color-blue-50: oklch(0.97 0.014 254.604);
@@ -15,6 +16,7 @@
     --spacing: 0.25rem;
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
+    --font-weight-thin: 100;
     --font-weight-light: 300;
     --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
@@ -173,6 +175,12 @@
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
   }
+  .mb-5 {
+    margin-bottom: calc(var(--spacing) * 5);
+  }
+  .mb-8 {
+    margin-bottom: calc(var(--spacing) * 8);
+  }
   .mb-9 {
     margin-bottom: calc(var(--spacing) * 9);
   }
@@ -191,6 +199,12 @@
   .table {
     display: table;
   }
+  .w-\[14rem\] {
+    width: 14rem;
+  }
+  .w-\[300\] {
+    width: 300;
+  }
   .w-\[300px\] {
     width: 300px;
   }
@@ -203,8 +217,20 @@
   .resize {
     resize: both;
   }
+  .flex-col {
+    flex-direction: column;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .items-start {
+    align-items: flex-start;
+  }
   .justify-around {
     justify-content: space-around;
+  }
+  .justify-center {
+    justify-content: center;
   }
   .rounded-t-\[40rem\] {
     border-top-left-radius: 40rem;
@@ -213,6 +239,9 @@
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .border-\[\#AF7452\] {
+    border-color: #AF7452;
   }
   .bg-\[\#FBF7EE\] {
     background-color: #FBF7EE;
@@ -223,6 +252,9 @@
   .bg-green-200 {
     background-color: var(--color-green-200);
   }
+  .bg-green-300 {
+    background-color: var(--color-green-300);
+  }
   .bg-red-100 {
     background-color: var(--color-red-100);
   }
@@ -231,6 +263,24 @@
   }
   .bg-teal-500 {
     background-color: var(--color-teal-500);
+  }
+  .p-10 {
+    padding: calc(var(--spacing) * 10);
+  }
+  .pt-2 {
+    padding-top: calc(var(--spacing) * 2);
+  }
+  .pt-20 {
+    padding-top: calc(var(--spacing) * 20);
+  }
+  .pr-5 {
+    padding-right: calc(var(--spacing) * 5);
+  }
+  .pb-2 {
+    padding-bottom: calc(var(--spacing) * 2);
+  }
+  .pl-5 {
+    padding-left: calc(var(--spacing) * 5);
   }
   .text-3xl {
     font-size: var(--text-3xl);
@@ -243,6 +293,13 @@
   .font-light {
     --tw-font-weight: var(--font-weight-light);
     font-weight: var(--font-weight-light);
+  }
+  .font-thin {
+    --tw-font-weight: var(--font-weight-thin);
+    font-weight: var(--font-weight-thin);
+  }
+  .text-\[\#AF7452\] {
+    color: #AF7452;
   }
   .text-blue-50 {
     color: var(--color-blue-50);
